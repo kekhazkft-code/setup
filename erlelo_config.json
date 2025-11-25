@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "variables": [
+    {
+      "name": "test_erlelo_github",
+      "type": "int",
+      "default_value": 42,
+      "description": "Test variable from GitHub config"
+    }
+  ]
+}
