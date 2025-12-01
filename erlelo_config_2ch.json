@@ -167,25 +167,25 @@
     },
     {
       "name": "befujt_homerseklet_table_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Supply air temperature buffer (JSON array)"
     },
     {
       "name": "befujt_para_table_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Supply air humidity buffer (JSON array)"
     },
     {
       "name": "kamra_homerseklet_table_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Chamber temperature buffer (JSON array)"
     },
     {
       "name": "kamra_para_table_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Chamber humidity buffer (JSON array)"
     },
@@ -203,19 +203,19 @@
     },
     {
       "name": "constansok_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "{\"deltahi_kamra_homerseklet\":15,\"deltalo_kamra_homerseklet\":10,\"temp_hysteresis_kamra\":5,\"ah_deadzone_kamra\":80,\"ah_hysteresis_kamra\":30,\"deltahi_befujt_homerseklet\":10,\"deltalo_befujt_homerseklet\":10,\"temp_hysteresis_befujt\":3,\"ah_deadzone_befujt\":50,\"ah_hysteresis_befujt\":20,\"outdoor_mix_ratio\":30,\"outdoor_use_threshold\":50,\"proportional_gain\":20,\"min_supply_air_temp\":80,\"max_supply_air_temp\":200,\"min_temp_no_humidifier\":110,\"buffer_size\":5,\"spike_threshold\":50,\"max_error_count\":10,\"temp_change_threshold\":20,\"humidity_change_threshold\":50,\"humidifier_installed\":0,\"humidifier_start_delta\":0,\"sleep_cycle_enabled\":0,\"sleep_on_minutes\":55,\"sleep_off_minutes\":5,\"init_duration\":32}",
       "description": "Chamber 1: Control constants (JSON)"
     },
     {
       "name": "signals_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 1: Control signals output (JSON)"
     },
     {
       "name": "cycle_variable_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 1: Cycle timing data (JSON)"
     },
@@ -257,19 +257,19 @@
     },
     {
       "name": "ah_dp_table_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 1: AH/DP calculation results (JSON)"
     },
     {
       "name": "suly_meres_table_1_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Weight sensor 1 buffer"
     },
     {
       "name": "suly_meres_table_2_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 1: Weight sensor 2 buffer"
     },
@@ -287,7 +287,7 @@
     },
     {
       "name": "hardware_config_ch1",
-      "type": "text",
+      "type": "string",
       "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":1,\"chamber_slave_id\":2,\"temp_register\":0,\"humi_register\":1},\"sbus\":{\"inp_humidity_save\":null,\"inp_sum_wint\":null,\"inp_weight_1\":null,\"inp_weight_2\":null,\"rel_warm\":null,\"rel_cool\":null,\"rel_add_air_max\":null,\"rel_reventon\":null,\"rel_add_air_save\":null,\"rel_bypass_open\":null,\"rel_main_fan\":null,\"rel_humidifier\":null,\"rel_sleep\":null}}",
       "description": "Chamber 1: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
@@ -365,25 +365,25 @@
     },
     {
       "name": "befujt_homerseklet_table_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Supply air temperature buffer (JSON array)"
     },
     {
       "name": "befujt_para_table_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Supply air humidity buffer (JSON array)"
     },
     {
       "name": "kamra_homerseklet_table_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Chamber temperature buffer (JSON array)"
     },
     {
       "name": "kamra_para_table_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Chamber humidity buffer (JSON array)"
     },
@@ -401,19 +401,19 @@
     },
     {
       "name": "constansok_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "{\"deltahi_kamra_homerseklet\":15,\"deltalo_kamra_homerseklet\":10,\"temp_hysteresis_kamra\":5,\"ah_deadzone_kamra\":80,\"ah_hysteresis_kamra\":30,\"deltahi_befujt_homerseklet\":10,\"deltalo_befujt_homerseklet\":10,\"temp_hysteresis_befujt\":3,\"ah_deadzone_befujt\":50,\"ah_hysteresis_befujt\":20,\"outdoor_mix_ratio\":30,\"outdoor_use_threshold\":50,\"proportional_gain\":20,\"min_supply_air_temp\":80,\"max_supply_air_temp\":200,\"min_temp_no_humidifier\":110,\"buffer_size\":5,\"spike_threshold\":50,\"max_error_count\":10,\"temp_change_threshold\":20,\"humidity_change_threshold\":50,\"humidifier_installed\":0,\"humidifier_start_delta\":0,\"sleep_cycle_enabled\":0,\"sleep_on_minutes\":55,\"sleep_off_minutes\":5,\"init_duration\":32}",
       "description": "Chamber 2: Control constants (JSON)"
     },
     {
       "name": "signals_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 2: Control signals output (JSON)"
     },
     {
       "name": "cycle_variable_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 2: Cycle timing data (JSON)"
     },
@@ -455,19 +455,19 @@
     },
     {
       "name": "ah_dp_table_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Chamber 2: AH/DP calculation results (JSON)"
     },
     {
       "name": "suly_meres_table_1_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Weight sensor 1 buffer"
     },
     {
       "name": "suly_meres_table_2_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Chamber 2: Weight sensor 2 buffer"
     },
@@ -485,7 +485,7 @@
     },
     {
       "name": "hardware_config_ch2",
-      "type": "text",
+      "type": "string",
       "default_value": "{\"modbus\": {\"supply_client_id\": null, \"chamber_client_id\": null, \"supply_slave_id\": 3, \"chamber_slave_id\": 4, \"temp_register\": 0, \"humi_register\": 1}, \"sbus\": {\"inp_humidity_save\": null, \"inp_sum_wint\": null, \"inp_weight_1\": null, \"inp_weight_2\": null, \"rel_warm\": null, \"rel_cool\": null, \"rel_add_air_max\": null, \"rel_reventon\": null, \"rel_add_air_save\": null, \"rel_bypass_open\": null, \"rel_main_fan\": null, \"rel_humidifier\": null, \"rel_sleep\": null}}",
       "description": "Chamber 2: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
@@ -515,19 +515,19 @@
     },
     {
       "name": "kulso_homerseklet_table_glbl",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Global: Outdoor temperature buffer"
     },
     {
       "name": "kulso_para_table_glbl",
-      "type": "text",
+      "type": "string",
       "default_value": "[]",
       "description": "Global: Outdoor humidity buffer"
     },
     {
       "name": "kulso_ah_dp_glbl",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Global: Outdoor AH/DP values (JSON)"
     },
@@ -539,13 +539,13 @@
     },
     {
       "name": "hardware_config_outdoor_glbl",
-      "type": "text",
+      "type": "string",
       "default_value": "{\"modbus_client_id\":null,\"modbus_slave_id\":10,\"temp_register\":0,\"humi_register\":1}",
       "description": "Global: Outdoor sensor hardware configuration - EDIT THIS"
     },
     {
       "name": "variable_name_map_glbl",
-      "type": "text",
+      "type": "string",
       "default_value": "{}",
       "description": "Global: Variable name to ID mapping (JSON) - AUTO-GENERATED"
     }
