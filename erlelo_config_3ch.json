@@ -122,73 +122,73 @@
     {
       "name": "kamra_homerseklet_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Current chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_para_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Current chamber humidity (% \u00d7 10)"
     },
     {
       "name": "kamra_homerseklet_raw_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Raw chamber temperature from sensor"
     },
     {
       "name": "kamra_para_raw_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Raw chamber humidity from sensor"
     },
     {
       "name": "kamra_cel_homerseklet_ch1",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 1: Target chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_cel_para_ch1",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 1: Target chamber humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_cel_homerseklet_ch1",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 1: Target supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_cel_para_ch1",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 1: Target supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_akt_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Current supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_para_akt_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Current supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_raw_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Raw supply air temperature from sensor"
     },
     {
       "name": "befujt_para_raw_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Raw supply air humidity from sensor"
     },
     {
@@ -218,13 +218,13 @@
     {
       "name": "befujt_hibaszam_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Supply sensor error count"
     },
     {
       "name": "kamra_hibaszam_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Chamber sensor error count"
     },
     {
@@ -248,37 +248,37 @@
     {
       "name": "ah_kamra_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Absolute humidity chamber (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_befujt_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Absolute humidity supply (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_cel_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Target absolute humidity (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "dp_kamra_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Dew point chamber (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_befujt_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Dew point supply (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_cel_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Target dew point (\u00b0C \u00d7 10)"
     },
     {
@@ -302,13 +302,13 @@
     {
       "name": "suly_meres_akt_1_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Weight sensor 1 current"
     },
     {
       "name": "suly_meres_akt_2_ch1",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 1: Weight sensor 2 current"
     },
     {
@@ -320,73 +320,73 @@
     {
       "name": "kamra_homerseklet_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Current chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_para_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Current chamber humidity (% \u00d7 10)"
     },
     {
       "name": "kamra_homerseklet_raw_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Raw chamber temperature from sensor"
     },
     {
       "name": "kamra_para_raw_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Raw chamber humidity from sensor"
     },
     {
       "name": "kamra_cel_homerseklet_ch2",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 2: Target chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_cel_para_ch2",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 2: Target chamber humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_cel_homerseklet_ch2",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 2: Target supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_cel_para_ch2",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 2: Target supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_akt_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Current supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_para_akt_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Current supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_raw_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Raw supply air temperature from sensor"
     },
     {
       "name": "befujt_para_raw_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Raw supply air humidity from sensor"
     },
     {
@@ -416,13 +416,13 @@
     {
       "name": "befujt_hibaszam_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Supply sensor error count"
     },
     {
       "name": "kamra_hibaszam_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Chamber sensor error count"
     },
     {
@@ -446,37 +446,37 @@
     {
       "name": "ah_kamra_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Absolute humidity chamber (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_befujt_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Absolute humidity supply (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_cel_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Target absolute humidity (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "dp_kamra_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Dew point chamber (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_befujt_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Dew point supply (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_cel_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Target dew point (\u00b0C \u00d7 10)"
     },
     {
@@ -500,13 +500,13 @@
     {
       "name": "suly_meres_akt_1_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Weight sensor 1 current"
     },
     {
       "name": "suly_meres_akt_2_ch2",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 2: Weight sensor 2 current"
     },
     {
@@ -518,73 +518,73 @@
     {
       "name": "kamra_homerseklet_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Current chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_para_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Current chamber humidity (% \u00d7 10)"
     },
     {
       "name": "kamra_homerseklet_raw_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Raw chamber temperature from sensor"
     },
     {
       "name": "kamra_para_raw_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Raw chamber humidity from sensor"
     },
     {
       "name": "kamra_cel_homerseklet_ch3",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 3: Target chamber temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kamra_cel_para_ch3",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 3: Target chamber humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_cel_homerseklet_ch3",
       "type": "integer",
-      "default_value": "150",
+      "default_value": 150,
       "description": "Chamber 3: Target supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_cel_para_ch3",
       "type": "integer",
-      "default_value": "750",
+      "default_value": 750,
       "description": "Chamber 3: Target supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_akt_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Current supply air temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "befujt_para_akt_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Current supply air humidity (% \u00d7 10)"
     },
     {
       "name": "befujt_homerseklet_raw_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Raw supply air temperature from sensor"
     },
     {
       "name": "befujt_para_raw_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Raw supply air humidity from sensor"
     },
     {
@@ -614,13 +614,13 @@
     {
       "name": "befujt_hibaszam_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Supply sensor error count"
     },
     {
       "name": "kamra_hibaszam_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Chamber sensor error count"
     },
     {
@@ -644,37 +644,37 @@
     {
       "name": "ah_kamra_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Absolute humidity chamber (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_befujt_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Absolute humidity supply (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "ah_cel_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Target absolute humidity (g/m\u00b3 \u00d7 100)"
     },
     {
       "name": "dp_kamra_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Dew point chamber (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_befujt_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Dew point supply (\u00b0C \u00d7 10)"
     },
     {
       "name": "dp_cel_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Target dew point (\u00b0C \u00d7 10)"
     },
     {
@@ -698,13 +698,13 @@
     {
       "name": "suly_meres_akt_1_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Weight sensor 1 current"
     },
     {
       "name": "suly_meres_akt_2_ch3",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Chamber 3: Weight sensor 2 current"
     },
     {
@@ -716,25 +716,25 @@
     {
       "name": "kulso_homerseklet_glbl",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Global: Current outdoor temperature (\u00b0C \u00d7 10)"
     },
     {
       "name": "kulso_para_glbl",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Global: Current outdoor humidity (% \u00d7 10)"
     },
     {
       "name": "kulso_homerseklet_raw_glbl",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Global: Raw outdoor temperature"
     },
     {
       "name": "kulso_para_raw_glbl",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Global: Raw outdoor humidity"
     },
     {
@@ -758,7 +758,7 @@
     {
       "name": "kulso_hibaszam_glbl",
       "type": "integer",
-      "default_value": "0",
+      "default_value": 0,
       "description": "Global: Outdoor sensor error count"
     },
     {
