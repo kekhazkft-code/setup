@@ -1,0 +1,23 @@
+{
+  "modbus": {
+    "supply_client_id": 5,
+    "chamber_client_id": 6,
+    "supply_slave_id": 9,
+    "chamber_slave_id": 10,
+    "temp_register": 1,
+    "humi_register": 2
+  },
+  "sbus": {
+    "rel_warm": 40,
+    "rel_cool": 41,
+    "rel_add_air_max": 42,
+    "rel_add_air_save": 43,
+    "rel_bypass_open": 45,
+    "rel_main_fan": 46,
+    "rel_humidifier": 47,
+    "rel_sleep": 48,
+    "inp_humidity_save": 30,
+    "inp_sum_wint": 31,
+    "inp_on_off": 32
+  }
+}
