@@ -16,12 +16,15 @@
     "humidifier_installed": false,
     "sleep_cycle_enabled": false,
     "sleep_on_minutes": 45,
-    "sleep_off_minutes": 15
+    "sleep_off_minutes": 15,
+    "init_duration": 320
   },
   "default_hardware_config": {
     "modbus": {
       "supply_component": "modbus_supply",
       "chamber_component": "modbus_chamber",
+      "supply_slave_id": 6,
+      "chamber_slave_id": 5,
       "temp_register": 1,
       "humi_register": 2
     },
@@ -160,7 +163,7 @@
     {
       "name": "constansok_ch1",
       "type": "string",
-      "default_value": "{\"deltahi_kamra_homerseklet\":10,\"deltalo_kamra_homerseklet\":10,\"deltahi_befujt_homerseklet\":20,\"deltalo_befujt_homerseklet\":15,\"deltahi_kamra_para\":15,\"deltalo_kamra_para\":10,\"ah_deadzone\":50,\"outdoor_mix_ratio\":30,\"outdoor_temp_threshold\":50,\"P\":20,\"humidifier_installed\":false,\"sleep_cycle_enabled\":false,\"sleep_on_minutes\":45,\"sleep_off_minutes\":15}",
+      "default_value": "{\"deltahi_kamra_homerseklet\":10,\"deltalo_kamra_homerseklet\":10,\"deltahi_befujt_homerseklet\":20,\"deltalo_befujt_homerseklet\":15,\"deltahi_kamra_para\":15,\"deltalo_kamra_para\":10,\"ah_deadzone\":50,\"outdoor_mix_ratio\":30,\"outdoor_temp_threshold\":50,\"P\":20,\"humidifier_installed\":false,\"sleep_cycle_enabled\":false,\"sleep_on_minutes\":45,\"sleep_off_minutes\":15,\"init_duration\":320}",
       "description": "Chamber 1: Control constants JSON"
     },
     {
@@ -172,8 +175,14 @@
     {
       "name": "cycle_variable_ch1",
       "type": "string",
-      "default_value": "{}",
-      "description": "Chamber 1: Sleep cycle state"
+      "default_value": "{\"aktiv\":true}",
+      "description": "Chamber 1: Sleep/active cycle control state"
+    },
+    {
+      "name": "init_state_ch1",
+      "type": "string",
+      "default_value": "{\"init_complete\":false,\"init_start_time\":0,\"completion_time\":\"\"}",
+      "description": "Chamber 1: Persistent initialization state (survives script reloads)"
     },
     {
       "name": "ah_dp_table_ch1",
@@ -185,19 +194,19 @@
       "name": "ah_kamra_ch1",
       "type": "integer",
       "default_value": 0,
-      "description": "Chamber 1: Chamber absolute humidity ×100 (g/m³)"
+      "description": "Chamber 1: Chamber absolute humidity ×1000 (g/m³)"
     },
     {
       "name": "ah_befujt_ch1",
       "type": "integer",
       "default_value": 0,
-      "description": "Chamber 1: Supply air absolute humidity ×100 (g/m³)"
+      "description": "Chamber 1: Supply air absolute humidity ×1000 (g/m³)"
     },
     {
       "name": "ah_cel_ch1",
       "type": "integer",
       "default_value": 0,
-      "description": "Chamber 1: Target absolute humidity ×100 (g/m³)"
+      "description": "Chamber 1: Target absolute humidity ×1000 (g/m³)"
     },
     {
       "name": "dp_kamra_ch1",
@@ -286,7 +295,7 @@
     {
       "name": "hardware_config_ch1",
       "type": "string",
-      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
+      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"supply_slave_id\":6,\"chamber_slave_id\":5,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
       "description": "Chamber 1: Hardware configuration JSON (Modbus components, SBUS I/O)"
     },
     {
@@ -357,12 +366,16 @@
     }
   ],
   "variable_count_summary": {
-    "chamber_ch1": 41,
+    "chamber_ch1": 42,
     "global": 10,
-    "total": 51
+    "total": 52
   },
   "changelog": {
     "v2.6.2": [
+      "Added init_state_ch1 for persistent initialization state (survives script reloads)",
+      "Added init_duration to default_control_constants (default 320 = 32 seconds)",
+      "Updated cycle_variable_ch1 default to include aktiv:true",
+      "Added supply_slave_id and chamber_slave_id to modbus configuration (supports Kulso-style addressing)",
       "Added hardware_config_ch1 for dedicated hardware configuration",
       "Added hardware_config_outdoor_glbl for outdoor sensor configuration",
       "Added raw sensor value variables (*_raw) for chamber, supply, and outdoor",
@@ -370,7 +383,8 @@
       "Added suly_meres_akt_* variables for current weight sensor values",
       "Updated version to match current erlelo_kamra_v1_1_6.lua",
       "Added default_hardware_config and default_hardware_config_outdoor sections",
-      "Improved variable descriptions with units and data types"
+      "Improved variable descriptions with units and data types",
+      "Fixed AH units description from ×100 to ×1000 for proper g/m³ resolution"
     ],
     "v2.4": [
       "Initial 1-chamber configuration",
