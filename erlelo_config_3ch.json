@@ -28,7 +28,9 @@
       "supply_component": "modbus_supply",
       "chamber_component": "modbus_chamber",
       "temp_register": 1,
-      "humi_register": 2
+      "humi_register": 2,
+      "supply_slave_id": 1,
+      "chamber_slave_id": 2
     },
     "sbus": {
       "rel_warm": 20,
@@ -293,7 +295,7 @@
     {
       "name": "hardware_config_ch1",
       "type": "string",
-      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
+      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"supply_slave_id\":1,\"chamber_slave_id\":2,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
       "description": "Chamber 1: Hardware configuration JSON (Modbus components, SBUS I/O)"
     },
     {
@@ -539,7 +541,7 @@
     {
       "name": "hardware_config_ch2",
       "type": "string",
-      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
+      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"supply_slave_id\":1,\"chamber_slave_id\":2,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
       "description": "Chamber 2: Hardware configuration JSON (Modbus components, SBUS I/O)"
     },
     {
@@ -785,7 +787,7 @@
     {
       "name": "hardware_config_ch3",
       "type": "string",
-      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
+      "default_value": "{\"modbus\":{\"supply_component\":\"modbus_supply\",\"chamber_component\":\"modbus_chamber\",\"supply_slave_id\":1,\"chamber_slave_id\":2,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"rel_warm\":20,\"rel_cool\":21,\"rel_add_air_max\":22,\"rel_add_air_save\":23,\"rel_bypass_open\":25,\"rel_main_fan\":26,\"rel_humidifier\":27,\"rel_sleep\":28,\"inp_humidity_save\":10,\"inp_sum_wint\":11,\"inp_on_off\":12}}",
       "description": "Chamber 3: Hardware configuration JSON (Modbus components, SBUS I/O)"
     },
     {
@@ -864,6 +866,7 @@
   },
   "changelog": {
     "v2.6.2": [
+      "Added Modbus slave IDs (supply_slave_id, chamber_slave_id) to hardware configuration",
       "Added init_state_ch1, init_state_ch2, and init_state_ch3 for persistent initialization state (survives script reloads)",
       "Added init_duration to default_control_constants (default 320 = 32 seconds)",
       "Updated cycle_variable defaults to include aktiv:true for all chambers",
