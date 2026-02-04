@@ -860,19 +860,19 @@
       "name": "test_mode_ch1_glbl",
       "type": "boolean",
       "default_value": false,
-      "description": "Global: Test mode for chamber 1 (stops Modbus polling, processes manual raw values through validation & averaging)"
+      "description": "Global: Test mode for chamber 1 (stops Modbus polling, )"
     },
     {
       "name": "test_mode_ch2_glbl",
       "type": "boolean",
       "default_value": false,
-      "description": "Global: Test mode for chamber 2 (stops Modbus polling, processes manual raw values through validation & averaging)"
+      "description": "Global: Test mode for chamber 2 (stops Modbus polling, )"
     },
     {
       "name": "test_mode_ch3_glbl",
       "type": "boolean",
       "default_value": false,
-      "description": "Global: Test mode for chamber 3 (stops Modbus polling, processes manual raw values through validation & averaging)"
+      "description": "Global: Test mode for chamber 3 (stops Modbus polling, )"
     },
     {
       "name": "variable_name_map_glbl",
