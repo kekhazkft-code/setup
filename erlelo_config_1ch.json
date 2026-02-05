@@ -371,6 +371,12 @@
       "description": "Global: Test mode for chamber 1 (stops Modbus polling, processes manual raw values through validation & averaging)"
     },
     {
+      "name": "test_bypass_filter_glbl",
+      "type": "boolean",
+      "default_value": false,
+      "description": "Global: Test mode filter bypass (when enabled in test mode, raw values copied directly without moving average filter)"
+    },
+    {
       "name": "variable_name_map_glbl",
       "type": "string",
       "default_value": "{}",
@@ -379,11 +385,12 @@
   ],
   "variable_count_summary": {
     "chamber_ch1": 42,
-    "global": 12,
-    "total": 54
+    "global": 13,
+    "total": 55
   },
   "changelog": {
     "v2.6.2": [
+      "Added test_bypass_filter_glbl for raw sensor value passthrough in test mode (1 variable)",
       "Added test_mode_ch*_glbl and test_mode_outdoor_glbl for manual testing (2 variables)",
       "Added Modbus slave IDs (supply_slave_id, chamber_slave_id) to hardware configuration",
       "Added init_state_ch1 for persistent initialization state (survives script reloads)",
