@@ -28,7 +28,6 @@
         "rel_add_air_save": 36,
         "rel_bypass_open": 32,
         "rel_main_fan": 33,
-        "rel_humidifier": 30,
         "rel_sleep": 6
       }
     },
@@ -64,7 +63,6 @@
         "rel_add_air_save": 47,
         "rel_bypass_open": 43,
         "rel_main_fan": 44,
-        "rel_humidifier": 41,
         "rel_sleep": 38
       }
     },
@@ -93,7 +91,6 @@
         "rel_add_air_save": 67,
         "rel_bypass_open": 71,
         "rel_main_fan": 70,
-        "rel_humidifier": 73,
         "rel_sleep": 49
       }
     }
@@ -323,7 +320,7 @@
     {
       "name": "hardware_config_ch1",
       "type": "text",
-      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":5,\"chamber_slave_id\":6,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":13,\"inp_sum_wint\":15,\"inp_on_off\":17,\"inp_cooler_air_output\":21,\"inp_cooler_water\":22,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":5,\"rel_cool\":31,\"rel_add_air_max\":35,\"rel_reventon\":34,\"rel_add_air_save\":36,\"rel_bypass_open\":32,\"rel_main_fan\":33,\"rel_humidifier\":30,\"rel_sleep\":6}}",
+      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":5,\"chamber_slave_id\":6,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":13,\"inp_sum_wint\":15,\"inp_on_off\":17,\"inp_cooler_air_output\":21,\"inp_cooler_water\":22,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":5,\"rel_cool\":31,\"rel_add_air_max\":35,\"rel_reventon\":34,\"rel_add_air_save\":36,\"rel_bypass_open\":32,\"rel_main_fan\":33,\"rel_sleep\":6}}",
       "description": "Chamber 1: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
     {
@@ -521,7 +518,7 @@
     {
       "name": "hardware_config_ch2",
       "type": "text",
-      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":7,\"chamber_slave_id\":8,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":1,\"inp_sum_wint\":3,\"inp_on_off\":19,\"inp_cooler_air_output\":23,\"inp_cooler_water\":24,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":37,\"rel_cool\":42,\"rel_add_air_max\":46,\"rel_reventon\":45,\"rel_add_air_save\":47,\"rel_bypass_open\":43,\"rel_main_fan\":44,\"rel_humidifier\":41,\"rel_sleep\":38}}",
+      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":7,\"chamber_slave_id\":8,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":1,\"inp_sum_wint\":3,\"inp_on_off\":19,\"inp_cooler_air_output\":23,\"inp_cooler_water\":24,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":37,\"rel_cool\":42,\"rel_add_air_max\":46,\"rel_reventon\":45,\"rel_add_air_save\":47,\"rel_bypass_open\":43,\"rel_main_fan\":44,\"rel_sleep\":38}}",
       "description": "Chamber 2: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
     {
@@ -719,7 +716,7 @@
     {
       "name": "hardware_config_ch3",
       "type": "text",
-      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":9,\"chamber_slave_id\":10,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":51,\"inp_sum_wint\":53,\"inp_on_off\":55,\"inp_cooler_air_output\":59,\"inp_cooler_water\":60,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":48,\"rel_cool\":72,\"rel_add_air_max\":68,\"rel_reventon\":69,\"rel_add_air_save\":67,\"rel_bypass_open\":71,\"rel_main_fan\":70,\"rel_humidifier\":73,\"rel_sleep\":49}}",
+      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":9,\"chamber_slave_id\":10,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":51,\"inp_sum_wint\":53,\"inp_on_off\":55,\"inp_cooler_air_output\":59,\"inp_cooler_water\":60,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":48,\"rel_cool\":72,\"rel_add_air_max\":68,\"rel_reventon\":69,\"rel_add_air_save\":67,\"rel_bypass_open\":71,\"rel_main_fan\":70,\"rel_sleep\":49}}",
       "description": "Chamber 3: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
     {
