@@ -29,6 +29,9 @@
         "rel_bypass_open": 32,
         "rel_main_fan": 33,
         "rel_sleep": 6
+      },
+      "wtp": {
+        "rel_humidifier": 1
       }
     },
     "outdoor": {
@@ -264,20 +267,20 @@
     {
       "name": "hardware_config_ch1",
       "type": "text",
-      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":5,\"chamber_slave_id\":6,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":13,\"inp_sum_wint\":15,\"inp_on_off\":17,\"inp_cooler_air_output\":21,\"inp_cooler_water\":22,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":5,\"rel_cool\":31,\"rel_add_air_max\":35,\"rel_reventon\":34,\"rel_add_air_save\":36,\"rel_bypass_open\":32,\"rel_main_fan\":33,\"rel_sleep\":6}}",
+      "default_value": "{\"modbus\":{\"supply_client_id\":null,\"chamber_client_id\":null,\"supply_slave_id\":5,\"chamber_slave_id\":6,\"temp_register\":1,\"humi_register\":2},\"sbus\":{\"inp_humidity_save\":13,\"inp_sum_wint\":15,\"inp_on_off\":17,\"inp_cooler_air_output\":21,\"inp_cooler_water\":22,\"inp_weight_1\":null,\"inp_weight_\":null,\"rel_warm\":5,\"rel_cool\":31,\"rel_add_air_max\":35,\"rel_reventon\":34,\"rel_add_air_save\":36,\"rel_bypass_open\":32,\"rel_main_fan\":33,\"rel_sleep\":6},\"wtp\":{\"rel_humidifier\":9}}",
       "description": "Chamber 1: Hardware configuration (Modbus/SBUS IDs) - EDIT THIS"
     },
     {
       "name": "befujt_szimulalt_ch1",
-      "type": "number",
-      "default_value": "0",
-      "description": "Chamber 1: Simulated supply air mode (0=real, 1=simulated)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Chamber 1: Supply sensor simulation mode"
     },
     {
       "name": "kamra_szimulalt_ch1",
-      "type": "number",
-      "default_value": "0",
-      "description": "Chamber 1: Simulated chamber mode (0=real, 1=simulated)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Chamber 1: Chamber sensor simulation mode"
     },
     {
       "name": "hibajel_ch1",
@@ -287,9 +290,9 @@
     },
     {
       "name": "init_state_ch1",
-      "type": "number",
-      "default_value": "0",
-      "description": "Chamber 1: Initialization state (0=not started, 1=in progress, 2=complete)"
+      "type": "text",
+      "default_value": "{}",
+      "description": "Chamber 1: Initialization state (JSON)"
     },
     {
       "name": "ntc1_homerseklet_ch1",
@@ -371,27 +374,27 @@
     },
     {
       "name": "kulso_szimulalt_glbl",
-      "type": "number",
-      "default_value": "0",
-      "description": "Global: Simulated outdoor mode (0=real, 1=simulated)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Global: Outdoor sensor simulation mode"
     },
     {
       "name": "test_mode_ch1_glbl",
-      "type": "number",
-      "default_value": "0",
-      "description": "Global: Test mode for chamber 1 (0=off, 1=on)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Global: Chamber 1 test mode enabled"
     },
     {
       "name": "test_mode_outdoor_glbl",
-      "type": "number",
-      "default_value": "0",
-      "description": "Global: Test mode for outdoor sensor (0=off, 1=on)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Global: Outdoor sensor test mode enabled"
     },
     {
       "name": "test_bypass_filter_glbl",
-      "type": "number",
-      "default_value": "0",
-      "description": "Global: Bypass filter for testing (0=off, 1=on)"
+      "type": "boolean",
+      "default_value": "false",
+      "description": "Global: Bypass filter test mode"
     },
     {
       "name": "variable_name_map_glbl",
