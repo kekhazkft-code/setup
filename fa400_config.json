@@ -1,0 +1,181 @@
+{
+  "name": "fa400_config",
+  "description": "FA400 fresh-air AHU control globals. Install this alongside the single-chamber ERLELO config; it adds only the FA400 globals and creates nothing that the ERLELO config already provides.",
+  "chambers": 1,
+  "variables": [
+    {
+      "name": "hardware_config_fa400_glbl",
+      "type": "text",
+      "description": "FA400 configuration document — written by commissioning (import)",
+      "default_value": "{}"
+    },
+    {
+      "name": "fa400_hum_demand_table_glbl",
+      "type": "text",
+      "description": "FA400 stepped delta-AH to duty table, permille — written by commissioning (import)",
+      "default_value": "{}"
+    },
+    {
+      "name": "fa400_enable_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by modbus_plc_gateway",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_box_fan_cmd_glbl",
+      "type": "number",
+      "description": "FA400 0 auto / 1 min / 2 max — written by modbus_plc_gateway",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_plc_life_glbl",
+      "type": "number",
+      "description": "FA400 rolling counter — written by modbus_plc_gateway",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_plc_stale_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by modbus_plc_gateway",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_fan1_volt_glbl",
+      "type": "number",
+      "description": "FA400 volt x10 — written by fan_control",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_fan2_volt_glbl",
+      "type": "number",
+      "description": "FA400 volt x10 — written by fan_control",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_fan_on_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by fan_control",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_airflow_glbl",
+      "type": "number",
+      "description": "FA400 m3/h — written by fan_control",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_dx_mode_glbl",
+      "type": "number",
+      "description": "FA400 0 OFF / 1 HEAT / 2 COOL — written by inverter_ctrl",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_dx_stage_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 / 2 — written by inverter_ctrl",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_dx_delta_glbl",
+      "type": "number",
+      "description": "FA400 C x10 — written by inverter_ctrl",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_preheat_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by frost_protect",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hx_leaving_glbl",
+      "type": "number",
+      "description": "FA400 C x10 — written by frost_protect",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hx_leaving_valid_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by frost_protect",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hx_intake_glbl",
+      "type": "number",
+      "description": "FA400 C x10 — written by frost_protect",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hx_intake_valid_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by frost_protect",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_em160_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by lindr_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_lindr_control_source_glbl",
+      "type": "number",
+      "description": "FA400 0 none / 1 primary NTC / 2 box fallback — written by lindr_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_lindr_temp_glbl",
+      "type": "number",
+      "description": "FA400 C x10 — written by lindr_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_lindr_temp_valid_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by lindr_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_axial_state_glbl",
+      "type": "number",
+      "description": "FA400 0 off / 1 min / 2 max — written by box_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_box_temp_glbl",
+      "type": "number",
+      "description": "FA400 C x10 — written by box_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_box_temp_valid_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by box_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_glycol_permit_glbl",
+      "type": "number",
+      "description": "FA400 0 inhibit / 1 permit — written by box_vent",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hum_demand_glbl",
+      "type": "number",
+      "description": "FA400 0...1000 permille — written by humidifier_level",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hum_duty_glbl",
+      "type": "number",
+      "description": "FA400 0...1000 permille — written by humidifier_level",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_hum_relay_glbl",
+      "type": "number",
+      "description": "FA400 0 / 1 — written by humidifier_level",
+      "default_value": "0"
+    }
+  ]
+}
