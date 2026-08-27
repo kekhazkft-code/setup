@@ -16,6 +16,18 @@
       "default_value": "{}"
     },
     {
+      "name": "kamra_cel_homerseklet_glbl",
+      "type": "number",
+      "description": "Chamber target temperature (°C × 10) — Modbus holding 0; single writer: modbus_plc_gateway. The ERLELO chamber program reads it through its _glbl fallback; no _ch1 variant exists, so the Main PLC is the only source.",
+      "default_value": "200"
+    },
+    {
+      "name": "kamra_cel_para_glbl",
+      "type": "number",
+      "description": "Chamber target humidity (% × 10) — Modbus holding 1; single writer: modbus_plc_gateway. The ERLELO chamber program reads it through its _glbl fallback; no _ch1 variant exists, so the Main PLC is the only source.",
+      "default_value": "500"
+    },
+    {
       "name": "fa400_enable_glbl",
       "type": "number",
       "description": "FA400 0 / 1 — written by modbus_plc_gateway",
@@ -58,9 +70,57 @@
       "default_value": "0"
     },
     {
+      "name": "fa400_airflow_low_glbl",
+      "type": "number",
+      "description": "FA400 0 ok / 1 airflow below the commissioned threshold — written by fan_control. The supply fans have no run feedback, so this is the only evidence that one has stopped or that the intake is fouling.",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_airflow_ratio_glbl",
+      "type": "number",
+      "description": "FA400 m3/h per commanded volt, x10 — written by fan_control. Open-loop health trend: a slow decline is fouling, a step is a stopped fan.",
+      "default_value": "0"
+    },
+    {
       "name": "fa400_airflow_glbl",
       "type": "number",
-      "description": "FA400 m3/h — written by fan_control",
+      "description": "FA400 m3/h — SUPPLY airflow transmitter, written by fan_control; 0 while unavailable. Name retained from the single-transmitter arrangement for compatibility; the extract side is fa400_extract_airflow_glbl.",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_extract_airflow_glbl",
+      "type": "number",
+      "description": "FA400 m3/h — extract airflow transmitter, written by fan_control; 0 while unavailable",
+      "default_value": "0"
+    },
+    {
+      "name": "fa400_supply_learned_volt_glbl",
+      "type": "number",
+      "description": "FA400 volt x10 — persistent learned supply trim state, written by fan_control. Survives restart; an invalid or uninitialised value starts from fans.supply_default_volt_x10. NOT the applied output: while stopped the applied report is 0 V and this value stays put.",
+      "default_value": "80"
+    },
+    {
+      "name": "fa400_extract_learned_volt_glbl",
+      "type": "number",
+      "description": "FA400 volt x10 — persistent learned extract trim state, written by fan_control. Same semantics as the supply learned voltage.",
+      "default_value": "80"
+    },
+    {
+      "name": "fa400_supply_target_glbl",
+      "type": "number",
+      "description": "FA400 m3/h — supply airflow target in force, written by fan_control; served on Modbus input 28",
+      "default_value": "400"
+    },
+    {
+      "name": "fa400_extract_target_glbl",
+      "type": "number",
+      "description": "FA400 m3/h — extract airflow target in force, written by fan_control; served on Modbus input 29",
+      "default_value": "400"
+    },
+    {
+      "name": "fa400_fan_status_glbl",
+      "type": "number",
+      "description": "FA400 fan-control status bitmask — written by fan_control, served on Modbus input 30. b0/b1 measurement valid, b2/b3 loop active, b4/b5 saturated at maximum voltage, b6/b7 baseline-reset settling, b8/b9 severe low flow, b10/b11 overdelivery at baseline, b12-b15 reserved and zero.",
       "default_value": "0"
     },
     {
